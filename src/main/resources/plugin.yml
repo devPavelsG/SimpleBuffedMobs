@@ -1,0 +1,7 @@
+name: BuffedMobs
+version: '${version}'
+main: me.pavelsgarklavs.buffedmobs.BuffedMobs
+api-version: 1.17
+authors: [ Dev_Pavels ]
+description: Mobs but they are buffed!
+website: pavelsgarklavs.me

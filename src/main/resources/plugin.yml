@@ -1,6 +1,6 @@
-name: BuffedMobs
+name: SimpleBuffedMobs
 version: '${version}'
-main: me.pavelsgarklavs.buffedmobs.BuffedMobs
+main: me.pavelsgarklavs.buffedmobs.SimpleBuffedMobs
 api-version: 1.17
 authors: [ Dev_Pavels ]
 description: Mobs but they are buffed!

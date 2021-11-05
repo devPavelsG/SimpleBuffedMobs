@@ -3,18 +3,16 @@ package me.pavelsgarklavs.buffedmobs;
 import me.pavelsgarklavs.buffedmobs.listeners.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class BuffedMobs extends JavaPlugin {
-    public static BuffedMobs instance;
+public final class SimpleBuffedMobs extends JavaPlugin {
+    public static SimpleBuffedMobs instance;
 
-    public static BuffedMobs getInstance() {
+    public static SimpleBuffedMobs getInstance() {
         return instance;
     }
 
     @Override
     public void onEnable() {
         instance = this;
-
-        System.out.println("\u001b[31mBuffedMobs has started! \u001b[32;1mAuthor: \u001b[31mDev_Pavels\u001b[0m");
 
         getServer().getPluginManager().registerEvents(new CreeperListener(), this);
         getServer().getPluginManager().registerEvents(new ZombieListener(), this);
@@ -32,7 +30,5 @@ public final class BuffedMobs extends JavaPlugin {
     @Override
     public void onDisable() {
         instance = null;
-
-        System.out.println("\u001b[31mBuffedMobs has stopped!\u001b[0m");
     }
 }

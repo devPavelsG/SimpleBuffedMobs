@@ -14,6 +14,8 @@ public final class BuffedMobs extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
+        System.out.println("\u001b[31mBuffedMobs has started! \u001b[32;1mAuthor: \u001b[31mDev_Pavels\u001b[0m");
+
         getServer().getPluginManager().registerEvents(new CreeperListener(), this);
         getServer().getPluginManager().registerEvents(new ZombieListener(), this);
         getServer().getPluginManager().registerEvents(new SkeletonListener(), this);
@@ -26,8 +28,11 @@ public final class BuffedMobs extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new WitherSkeletonListener(), this);
         getServer().getPluginManager().registerEvents(new BlazeListener(), this);
     }
+
     @Override
     public void onDisable() {
         instance = null;
+
+        System.out.println("\u001b[31mBuffedMobs has stopped!\u001b[0m");
     }
 }

@@ -1,7 +1,5 @@
 package me.pavelsgarklavs.buffedmobs.listeners;
 
-import org.bukkit.attribute.Attribute;
-import org.bukkit.attribute.AttributeInstance;
 import org.bukkit.entity.Enderman;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
